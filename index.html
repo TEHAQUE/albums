@@ -4,30 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
 <body>
-    <nav class="zone green">
-        <ul class="main-nav">
-            <li><a href="">About</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Our Team</a></li>
-            <li class="push"><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="container zone red"></div>
-      <div class="zone blue grid-wrapper">
-        <div class="box zone"><img src="./img/files_2.png"></div>
-        <div class="box zone"><img src="./img/server_2_2.png"></div>
-        <div class="box zone"><img src="./img/monitor_settings_2.png"></div>
-        <div class="box zone"><img src="./img/server_3.png"></div>
-        <div class="box zone"><img src="./img/data_storage_2_2.png"></div>
-        <div class="box zone"><img src="./img/monitor_coding_2.png"></div>
-        <div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
-        <div class="box zone"><img src="./img/server_safe_2.png"></div>
-      </div>
-      <footer class="zone yellow"></footer>
+    <div class="first-section">
+        <div class="first-section-title">Płyty moje ulubione</div>
     </div>
+    <div class="bridge"></div>
+    <div class="second-section">
+        <div class="segment-title"></div>
+        <div class="albums-cover">
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://2.allegroimg.com/s1024/0cb839/9e85f49643a088645f0df99d81f2">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: The Life Of Pablo</span>
+                    <span>Wykonawca: Kanye West</span>
+                    <span>Rok wydania: 2016</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: Yeezus</span>
+                    <span>Wykonawca: Kanye West</span>
+                    <span>Rok wydania: 2013</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://img.etimg.com/thumb/msid-84678293,width-1200,height-900,imgsize-76715,overlay-etpanache/photo.jpg">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: Donda</span>
+                    <span>Wykonawca: Kanye West</span>
+                    <span>Rok wydania: 2021</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://ecsmedia.pl/c/testing-w-iext52939541.jpg">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: Testing</span>
+                    <span>Wykonawca: A$AP Rocky</span>
+                    <span>Rok wydania: 2018</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://ecsmedia.pl/c/good-kid-m-a-a-d-city-deluxe-edition-w-iext40747666.jpg">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: Good Kid / M.A.A.D CITY (Deluxe)</span>
+                    <span>Wykonawca: Kendrick Lamar</span>
+                    <span>Rok wydania: 2012</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://ecsmedia.pl/c/astroworld-b-iext53240164.jpg">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: Astroworld</span>
+                    <span>Wykonawca: Travis Scott</span>
+                    <span>Rok wydania: 2018</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://ecsmedia.pl/c/kosmos-p-iext51944635.jpg">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: Kosmos</span>
+                    <span>Wykonawca: Arab</span>
+                    <span>Rok wydania: 2017</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-acom">
+                    <img class="cover" src="https://ecsmedia.pl/c/100-dni-do-matury-b-iext70154280.jpg">
+                </div>
+                <div class="album-info">
+                    <span>Informacje</span>
+                    <span>Nazwa płyty: 100 dni do matury</span>
+                    <span>Wykonawca: Mata</span>
+                    <span>Rok wydania: 2020</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><ul>
+        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008292030845"><span class="social"> Facebook</span></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/urfe4w3rn/"><span class="social">Instagram</span></a></li>
+        <li><a target="_blank" href="https://github.com/TEHAQUE"><span class="social">GitHub</span></a></li>
+    </ul></footer>
+    <script>
+        let $obj= document.querySelector('.albums-cover');
+        let $info = document.querySelector('.album-info');
+        let $order = document.querySelector('.items');
+
+        $obj.addEventListener('mousemove',showInfo=(e)=>{
+            if(e.target.closest('div').classList.contains('album-info')){
+                console.log('elo');
+            e.target.closest('div').style.transition = '0.5s';
+            e.target.closest('div').style.height = '40%';}
+            })
+        $obj.addEventListener('mouseout',hideInfo=(e)=>{
+            if(e.target.closest('div').classList.contains('album-info')){
+                console.log('elo');
+            e.target.closest('div').style.transition = '0.5s';
+            e.target.closest('div').style.height = '10%';}
+            })
+    </script>
 </body>
 </html>

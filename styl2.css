@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*! kolor tła w celach technicznych */
+  background-color: #1d1b20;
+  height: 200vh;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(255, 255, 255);
+  background-image: url(img/pexels-artem-beliaikin-1036856.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 22px;
+  z-index: 120;
+}
+.menuImg {
+  display: flex;
+  justify-content: flex-start;
+}
+.menuImg > button:hover {
+  transform: scale(1.3);
+  transition: transform 0.7s;
+}
+.menuImg > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 30px;
+  transition: transform 0.7s;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item-acom > img {
+  height: 450px;
+  width: 300px;
+  border: 4px solid black;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -100px;
+  left: 100px;
+  transition: transform 0.7s;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 50px; */
+  list-style: none;
+  width: 100vw;
+}
+nav li {
+  background: none;
+  transition: transform 0.7s;
+}
+nav li:hover {
+  /* transform: scale(1.1);
+  background: rgb(5, 115, 247);
+  background: linear-gradient(
+    270deg,
+    rgba(88, 88, 88, 0.548) 0%,
+    rgba(97, 153, 216, 0) 70%
+  ); */
+  transform: scale(1.1);
+  background: rgb(5, 115, 247);
+  background: linear-gradient(
+    0deg,
+    rgba(88, 88, 88, 0.548) 0%,
+    rgba(97, 153, 216, 0) 70%
+  );
+  transition: transform 0.7s;
+}
+nav a {
+  display: block;
+  padding: 15px 40px;
+  text-shadow: 9px 8px 15px whitesmoke;
+  color: black;
+  -webkit-text-stroke: 0.5px black;
+  text-decoration: none;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}
+.active {
+  transform: translateY(100px);
+  transition: transform 0.7s;
+}
+.active2 {
+  transform: translateX(150px);
+  transition: transform 0.7s;
+}
+.active3 {
+  transform: translateY(150px);
+  transition: transform 0.7s;
+}
+.hide {
+  display: none;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+.item-title {
+  font-weight: 500;
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: start;
+  text-shadow: 7px 4px 8px black;
+  -webkit-text-stroke: 0.25px black;
+}
+.item-description {
+  text-shadow: 7px 4px 8px black;
+  -webkit-text-stroke: 0.15px black;
+}
+.komunikat {
+  position: absolute;
+  background-color: cornsilk;
+  color: #1d1b20;
+  width: 250px;
+  height: 80px;
+  top: -120px;
+  right: 20px;
+  border-radius: 15px;
+  transition: transform 0.7s;
+}
+.komunikat > span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  width: 250px;
+  height: 80px;
+}
+.item-info {
+  font-weight: 500;
+  text-shadow: 2px 2px 9px white;
+  color: black;
+  -webkit-text-stroke: 0.3px black;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 170px;
+  margin-left: -120px;
+  transition: transform 0.7s;
+}
+.item-info > button {
+  display: flex;
+  justify-content: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.item-info > span {
+  margin-top: 10px;
+  z-index: -10;
+}
+.item-function {
+  -webkit-text-stroke: 0.25px black;
+  text-shadow: 7px 4px 8px black;
+  color: white;
+  margin: 6px;
+  display: flex;
+  justify-content: space-around;
+  /* border-bottom: 3px solid rgb(170, 170, 170); */
+}
+.item-acom {
+  display: flex;
+  flex-direction: row;
+  background-color: #4d425e;
+}
+.btnAdd {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  width: 30%;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+::-webkit-scrollbar {
+  width: 20px;
+  background: #1d1b20;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #858488;
+  border: 7px solid #1d1b20;
+  border-radius: 1em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
