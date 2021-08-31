@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
 }
-body, html { overflow-x:hidden; }
+body, html { overflow-x:hidden;
+-webkit-overflow-scrolling: touch;}
 body {
   /*! kolor tła w celach technicznych */
   background-image: url(img/first-section-background-cover.jpg);
@@ -16,6 +17,7 @@ body {
   background-attachment: fixed;
   font-size: 22px;
   overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
 }
 .first-section {
   display: flex;
