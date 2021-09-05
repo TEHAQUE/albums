@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Albums</title>
 </head>
 <body>
     <div class="first-section">
-        <div class="first-section-title">Płyty moje ulubione</div>
+        <div class="first-section-title">Albums</div>
     </div>
     <div class="bridge"></div>
     <div class="second-section">
-        <div class="segment-title"></div>
+        <div class="segment-title">Top 10 Albums for me</div>
         <div class="albums-cover">
             <div class="item">
                 <div class="item-acom">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="album-info">
                     <span>Informacje</span>
-                    <span>Nazwa płyty: The Life Of Pablo</span>
+                    <span>Nazwa: The Life Of Pablo</span>
                     <span>Wykonawca: Kanye West</span>
                     <span>Rok wydania: 2016</span>
                 </div>
@@ -111,22 +111,28 @@
         <li><a target="_blank" href="https://github.com/TEHAQUE"><span class="social">GitHub</span></a></li>
     </ul></footer>
     <script>
-        let $obj= document.querySelector('.albums-cover');
-        let $info = document.querySelector('.album-info');
-        let $order = document.querySelector('.items');
+        let $albumCover= document.querySelector('.albums-cover');
 
-        $obj.addEventListener('mousemove',showInfo=(e)=>{
+        const itemAnimation =()=>{
+            style.opacity = '1';
+            style.transform= 'translateY(-80px)'
+            style.transition = '1s';
+            console.log('witam');
+        };
+
+
+        $albumCover.addEventListener('mouseover',showInfo=(e)=>{
             if(e.target.closest('div').classList.contains('album-info')){
-                console.log('elo');
             e.target.closest('div').style.transition = '0.5s';
             e.target.closest('div').style.height = '40%';}
             })
-        $obj.addEventListener('mouseout',hideInfo=(e)=>{
+        $albumCover.addEventListener('mouseout',hideInfo=(e)=>{
             if(e.target.closest('div').classList.contains('album-info')){
-                console.log('elo');
             e.target.closest('div').style.transition = '0.5s';
-            e.target.closest('div').style.height = '10%';}
+            e.target.closest('div').style.height = '12%';}
             })
+        $albumCover.addEventListener('scroll', itemAnimation())
+        
     </script>
 </body>
 </html>
